@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery </title>
-    <link rel="stylesheet" href="style.css  ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
     <div class="h1"> 
         <h1>Image Gallery</h1>
     </div>
+
     <div class="full-img" id="fullImgBox">
+        <span class="close-btn" onclick="closeFullImg()">X</span>
         <img src="Images/courtois.jpeg" id="fullImg">
-        <span onclick="closeFullImg()">X</span>
+        <div class="nav-btns">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
     </div>
 
     <div class="img-gallery">
-        <img src="Images/courtois.jpeg"  onclick="openFullImg(this.src)">
-        <img src="Images/ramos.jpeg"     onclick="openFullImg(this.src)">
-        <img src="Images/vvd.jpeg"       onclick="openFullImg(this.src)">
-        <img src="Images/marcelo.jpeg"   onclick="openFullImg(this.src)">
-        <img src="Images/kdb.jpeg"       onclick="openFullImg(this.src)">
-        <img src="Images/Zizou.jpeg"     onclick="openFullImg(this.src)">
-        <img src="Images/Modric.jpeg"    onclick="openFullImg(this.src)">
-        <img src="Images/ozil.jpeg"      onclick="openFullImg(this.src)">
-        <img src="Images/messi.jpeg"     onclick="openFullImg(this.src)">
-        <img src="Images/CR7.jpeg"       onclick="openFullImg(this.src)">
-        <img src="Images/neymar.jpeg"    onclick="openFullImg(this.src)">
-       
-
+        <img src="Images/courtois.jpeg" onclick="openFullImg(this.src, 0)">
+        <img src="Images/ramos.jpeg" onclick="openFullImg(this.src, 1)">
+        <img src="Images/vvd.jpeg" onclick="openFullImg(this.src, 2)">
+        <img src="Images/marcelo.jpeg" onclick="openFullImg(this.src, 3)">
+        <img src="Images/kdb.jpeg" onclick="openFullImg(this.src, 4)">
+        <img src="Images/Zizou.jpeg" onclick="openFullImg(this.src, 5)">
+        <img src="Images/Modric.jpeg" onclick="openFullImg(this.src, 6)">
+        <img src="Images/ozil.jpeg" onclick="openFullImg(this.src, 7)">
+        <img src="Images/messi.jpeg" onclick="openFullImg(this.src, 8)">
+        <img src="Images/CR7.jpeg" onclick="openFullImg(this.src, 9)">
+        <img src="Images/neymar.jpeg" onclick="openFullImg(this.src, 10)">
     </div>
 
-
-
-<script src="scrpt..js"></script>
+    <script src="scrpt..js"></script>
 </body>
 </html>
